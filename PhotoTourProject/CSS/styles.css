@@ -2,8 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../images/.jpg');
-    background-size: cover;
     color: #333;
 }
 
@@ -28,6 +26,9 @@ nav a {
 
 section {
     padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Adds a light background for readability */
+    margin: 20px;
+    border-radius: 10px;
 }
 
 img {
@@ -40,4 +41,35 @@ img {
 
 ul {
     list-style-image: url('../images/custom-bullet.png');
+}
+
+/* Background images for each page */
+body.index {
+    background-image: url('../images/bg-index.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.funafuti {
+    background-image: url('../images/bg-funafuti.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.nanumea {
+    background-image: url('../images/bg-nanumea.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.nukulaelae {
+    background-image: url('../images/bg-nukulaelae.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.food {
+    background-image: url('../images/bg-food.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
