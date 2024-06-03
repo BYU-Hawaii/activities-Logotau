@@ -4,14 +4,29 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f0f8ff; /* Light blue background for the whole page */
+    color: #333; /* Dark gray text color for better readability */
   }
   
   header, nav, main, footer {
     padding: 1em;
   }
   
+  header {
+    background-color: #0d5b23; /* Light pink background for header */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 2em 1em;
+  }
+
   header h1 {
     font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+  }
+
+  nav {
+    background-color: #5fd072; /* Hot pink background for navbar */
     text-align: center;
   }
   
@@ -19,20 +34,24 @@ body {
     list-style: none;
     padding: 0;
     text-align: center;
+    margin: 0;
   }
   
   nav ul li {
     display: inline;
     margin: 0 1em;
   }
-  
+
   main {
-    padding: 1em;
+    background-color: lightgreen;
+    margin: 50px 100px;
+    padding: 50px;
   }
   
   main img {
     width: 100%;
     height: auto;
+    border-radius: 8px; /* Rounded corners for images */
   }
   
   section {
@@ -42,7 +61,15 @@ body {
   footer {
     text-align: center;
     padding: 1em;
-    background: #eee;
+    background: #337450;
+    color: #fff; /* White text color for footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
   }
   
   /* Media Queries for Larger Screens */
