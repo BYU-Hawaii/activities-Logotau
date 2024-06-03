@@ -1,0 +1,15 @@
+/* Garden specific styles */
+#garden {
+    border: 7px solid #4CAF50;
+    border-radius: 8px;
+    margin: 1em 0;
+  }
+  
+  section {
+    margin-bottom: 2em;
+  }
+  
+  ul, ol {
+    padding-left: 1.5em;
+  }
+  
