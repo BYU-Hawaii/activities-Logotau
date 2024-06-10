@@ -10,17 +10,20 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
 
 nav {
-    background: #444;
+    background: rgba(68, 68, 68, 0.8);
     color: #fff;
     padding: 0.5rem;
     text-align: center;
@@ -29,16 +32,24 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 0.5rem;
+    margin: 0.5rem 0;
     display: block;
 }
 
+figure img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    border: 3px solid black;
+}
 nav a:hover {
     text-decoration: underline;
 }
 
 main {
     padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
 }
 
 section {
@@ -46,7 +57,7 @@ section {
 }
 
 footer {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -57,6 +68,12 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 /* Medium Devices (Tablets) */
@@ -73,8 +90,12 @@ img {
     }
 
     section {
-        flex: 1 1 calc(50% - 2rem);
+        flex: 1 1 calc(33.33% - 2rem);
         margin: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -90,6 +111,10 @@ img {
         padding: 1rem 2rem;
     }
 
+    figure {
+        width: calc(100% - 10px);
+    }
+
     main {
         display: flex;
         flex-wrap: wrap;
@@ -101,4 +126,29 @@ img {
         flex: 1 1 calc(33.333% - 2rem);
         margin: 1rem;
     }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Background Images for Each Page */
+body.index {
+    background-image: url('../images/bg-index.jpg');
+}
+
+body.funafuti {
+    background-image: url('../images/bg-funafuti.jpg');
+}
+
+body.nanumea {
+    background-image: url('../images/bg-nanumea.jpg');
+}
+
+body.nukulaelae {
+    background-image: url('../images/bg-nukulaelae.jpg');
+}
+
+body.food {
+    background-image: url('../images/bg-food.jpg');
 }
