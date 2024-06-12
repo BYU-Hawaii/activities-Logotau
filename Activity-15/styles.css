@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Grid Container */
+/* Grid Container */ +
 .grid-container {
     display: grid;
     grid-template-areas: 
