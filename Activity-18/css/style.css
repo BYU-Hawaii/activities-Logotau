@@ -6,11 +6,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
 
 form {
-  background: #fff;
+  background: #cdcaca;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -37,7 +37,7 @@ button {
 }
 
 button {
-  background-color: #28a745;
+  background-color: #279f43;
   color: white;
   border: none;
   cursor: pointer;
