@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Mobile navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('nav ul');
+
     // Example: Add functionality to toggle navigation menu on mobile
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('nav ul');
