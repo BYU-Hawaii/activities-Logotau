@@ -33,3 +33,16 @@ function checkWin() {
 
 // Initialize the puzzle display
 updateWordPuzzle();
+
+// AI-generated word list for the puzzle
+const words = ["APPLE", "BANANA", "ORANGE", "GRAPE", "MANGO"];
+
+// Function to select a random word
+function getRandomWord() {
+    return words[Math.floor(Math.random() * words.length)];
+}
+
+// Set the word to a randomly selected word
+let word = getRandomWord();
+
+// Rest of the code remains the same...
