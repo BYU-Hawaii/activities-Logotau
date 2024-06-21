@@ -20,23 +20,20 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <section class="games">
-            <h1>AI-Generated Games</h1>
-            <p>Explore our exciting collection of AI-generated games!</p>
-            <div class="game-list">
-                <div class="game-item">Game 1</div>
-                <div class="game-item">Game 2</div>
-                <div class="game-item">Game 3</div>
+            <h1>Word Puzzle Game</h1>
+            <div class="game-container">
+                <p id="word-puzzle">_ _ _ _</p>
+                <input type="text" id="guess" placeholder="Guess a letter">
+                <button onclick="checkGuess()">Submit</button>
+                <p id="message"></p>
             </div>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 FunSite. All rights reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
+    <script src="scripts/game.js"></script>
 </body>
 </html>

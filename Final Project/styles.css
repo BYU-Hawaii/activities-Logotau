@@ -1,153 +1,124 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 header {
     background-color: #ffcc00;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 2em;
     font-weight: bold;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    display: flex;
 }
 
 nav ul li {
-    margin-left: 20px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
-    font-size: 18px;
+    color: #333;
+    font-weight: bold;
 }
 
 .hero {
-    background-color: #00ccff;
-    color: #fff;
+    background-color: #e0ffff;
+    padding: 50px 0;
     text-align: center;
-    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .hero button {
-    background-color: #ff6600;
-    border: none;
+    font-size: 1.2em;
     padding: 10px 20px;
-    font-size: 18px;
+    background-color: #ff4500;
     color: #fff;
+    border: none;
     cursor: pointer;
 }
 
-.hero button:hover {
-    background-color: #ff3300;
-}
-
-.featured-games, .testimonials {
-    padding: 20px;
-}
-
-.featured-games h2, .testimonials h2 {
+.featured-games, .testimonials, .feedback-form, .about, .educational, .funfacts {
+    background-color: #fffacd;
+    padding: 30px 0;
     text-align: center;
-    color: #333;
 }
 
-.game-list {
+.featured-games h2, .testimonials h2, .feedback-form h1, .about h1, .educational h1, .funfacts h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.game-list, .testimonial {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .game-item {
-    background-color: #ffcc00;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 30%;
-}
-
-.testimonial {
-    background-color: #fff7e6;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px 0;
-    text-align: center;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-@media (max-width: 600px) {
-    .game-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .game-item {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-/* Existing CSS content */
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: auto;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea, form select {
-    margin-top: 5px;
+    margin: 0 10px;
     padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+    background-color: #98fb98;
     border-radius: 5px;
-}
-
-form button {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #ff6600;
-    border: none;
-    color: white;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #ff3300;
+.testimonial {
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+#word-puzzle {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#guess {
+    padding: 5px;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+}
