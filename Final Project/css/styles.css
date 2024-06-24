@@ -1,0 +1,422 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+/* Homepage styles */
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feature {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* About page styles */
+.about-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fun Facts Page Styles */
+.fun-facts {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.fact-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+}
+
+.fact-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.fact-card h2 {
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+}
+
+.fact-card p {
+    color: #333;
+}
+
+/* Game Guide Page Styles */
+.game-guide ol, .game-guide ul {
+    padding-left: 1.5rem;
+}
+
+.tips {
+    background-color: #e6f7ff;
+    border-left: 4px solid #1890ff;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Feedback Form Styles */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.feedback-form label {
+    margin-top: 1rem;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.feedback-form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .features {
+        flex-direction: row;
+    }
+
+    .feature {
+        flex: 1;
+    }
+}
+
+/* ... (previous styles remain the same) ... */
+
+/* Game Styles */
+#game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#description {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+#guess {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+
+#result {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+#score {
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* ... (previous styles remain the same) ... */
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* General improvements for a more professional look */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: #4CAF50;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0;
+}
+
+main {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+h1, h2, h3 {
+    color: #4CAF50;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
+#game-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#description {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+
+#guess {
+    padding: 0.7em;
+    font-size: 1em;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin-right: 0.5em;
+}
+
+#game-container button {
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#game-container button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 1.5em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#score {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+body.home-page {
+    background-image: url('../images/home-background.jpg');
+}
+
+body.game-page {
+    background-image: url('../images/game-background.jpg');
+}
+
+body.about-page {
+    background-image: url('../images/about-background.jpg');
+}
+
+body.fun-facts-page {
+    background-image: url('../images/fun-facts-background.jpg');
+}
+
+body.game-guide-page {
+    background-image: url('../images/game-guide-background.jpg');
+}
+
+body.feedback-page {
+    background-image: url('../images/feedback-background.jpg');
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

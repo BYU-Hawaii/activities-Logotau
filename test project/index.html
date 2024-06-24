@@ -3,17 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Animal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fun Kids Learning - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <div class="game-container">
-        <h1>Guess the Animal!</h1>
-        <p id="description"></p>
-        <input type="text" id="guess" placeholder="Enter your guess">
-        <button onclick="checkGuess()">Submit Guess</button>
-        <p id="result"></p>
-    </div>
-    <script src="javascript.js"></script>
+<body class="home-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Play Game</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="fun-facts.html">Fun Facts</a></li>
+                <li><a href="game-guide.html">Game Guide</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Fun Kids Learning!</h1>
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="Kids learning and having fun">
+            <p>Discover, Play, and Learn with Us!</p>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="images/game-icon.png" alt="Game icon">
+                <h2>Fun Games</h2>
+                <p>Play our exciting animal guessing game!</p>
+            </div>
+            <div class="feature">
+                <img src="images/learn-icon.png" alt="Learning icon">
+                <h2>Learn</h2>
+                <p>Explore interesting facts about animals and nature.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fun Kids Learning. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
