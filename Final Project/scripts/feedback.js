@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('feedbackForm');
+    var form = document.getElementById('feedbackForm');
     
     form.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function validateForm() {
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const rating = document.getElementById('rating').value;
-        const comments = document.getElementById('comments').value.trim();
+        var name = document.getElementById('name').value.trim(),
+            email = document.getElementById('email').value.trim(),
+            rating = document.getElementById('rating').value,
+            comments = document.getElementById('comments').value.trim();
 
         if (name === '') {
             alert('Please enter your name.');
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function isValidEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     }
 });
