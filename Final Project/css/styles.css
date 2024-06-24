@@ -284,7 +284,7 @@ nav ul li a:hover {
 }
 
 main {
-    background-color: white;
+    background-color: rgb(255,255,255,0.5);
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
