@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Kids Learning - Play Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Play Game</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="fun-facts.html">Fun Facts</a></li>
+                <li><a href="game-guide.html">Game Guide</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Guess the Animal Game</h1>
+        <div id="game-container">
+            <!-- Game content will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fun Kids Learning. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
