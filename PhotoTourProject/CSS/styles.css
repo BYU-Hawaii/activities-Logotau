@@ -1,17 +1,27 @@
+/* Reset default styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
+    background-image: url('../images/your-background-image.jpg'); /* Replace with your desired background image path */
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
+/* Header and footer styles */
 header, footer {
     background-color: #008080;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
+/* Navigation styles */
 nav {
     background-color: #20B2AA;
     text-align: center;
@@ -24,115 +34,98 @@ nav a {
     text-decoration: none;
 }
 
+/* Main section styles */
 section {
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Adds a light background for readability */
-    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    max-width: 1200px; /* Limit section width */
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure images are evenly spaced */
+}
+
+/* Figure (image and caption) styles */
+figure {
+    text-align: center;
+    margin: 20px auto;
+    flex: 1 1 calc(30% - 40px); /* Adjust width of each figure element */
+    max-width: 300px; /* Limit max width of figure */
+
 }
 
 img {
-    max-width: 650px;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px auto;
+    margin-bottom: 10px; /* Add space between image and caption */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-ul {
-    list-style-image: url('../images/custom-bullet.png');
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px; /* Adjust spacing between image and caption */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #008080;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Background images for each page */
 body.index {
     background-image: url('../images/bg-index.jpg');
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 body.funafuti {
     background-image: url('../images/bg-funafuti.jpg');
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 body.nanumea {
     background-image: url('../images/bg-nanumea.jpg');
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 body.nukulaelae {
     background-image: url('../images/bg-nukulaelae.jpg');
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 body.food {
     background-image: url('../images/bg-food.jpg');
-    background-size: cover;
-    background-attachment: fixed;
 }
 
-/* Media queries */
+/* Media Queries */
 @media (max-width: 1200px) {
-    nav a {
-        margin: 0 10px;
-    }
     section {
-        margin: 15px;
-        padding: 15px;
+        justify-content: center; /* Center items on medium screens */
+    }
+    figure {
+        flex: 1 1 calc(40% - 40px); /* Adjust figure width for medium screens */
     }
 }
 
 @media (max-width: 992px) {
-    header, footer {
-        padding: 8px 0;
-    }
-    nav {
-        padding: 8px 0;
-    }
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
     section {
-        margin: 10px;
-        padding: 10px;
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items on small screens */
     }
-    img {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    header, footer {
-        padding: 6px 0;
-    }
-    nav {
-        padding: 6px 0;
-    }
-    nav a {
-        margin: 8px 0;
-    }
-    section {
-        margin: 8px;
-        padding: 8px;
+    figure {
+        flex: 1 1 100%; /* Full width for figures on small screens */
     }
 }
 
 @media (max-width: 576px) {
-    header, footer {
-        padding: 5px 0;
-    }
-    nav {
-        padding: 5px 0;
-    }
-    nav a {
-        margin: 5px 0;
-    }
-    section {
-        margin: 5px;
-        padding: 5px;
+    figure {
+        margin: 10px auto; /* Adjust margin for small screens */
     }
 }
