@@ -1,140 +1,18 @@
-/* Mobile First CSS */
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-header {
-    background: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav {
-    background: rgba(68, 68, 68, 0.8);
-    color: #fff;
-    padding: 0.5rem;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0.5rem 0;
-    display: block;
-}
-
-figure img {
-    max-width: 100%;
-    height: auto;
-    padding: 5px;
-    border: 3px solid black;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-}
-
-section {
-    margin: 1rem 0;
-}
-
-footer {
-    background: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-/* Medium Devices (Tablets) */
-@media (min-width: 600px) {
-    nav a {
-        display: inline-block;
-        margin: 0 1rem;
-    }
-
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    section {
-        flex: 1 1 calc(33.33% - 2rem);
-        margin: 1rem;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Large Devices (Desktops) */
-@media (min-width: 992px) {
-    header {
-        text-align: left;
-        padding: 1rem 2rem;
-    }
-
-    nav {
-        text-align: left;
-        padding: 1rem 2rem;
-    }
-
-    figure {
-        width: calc(100% - 10px);
-    }
-
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 1rem 2rem;
-    }
-
-    section {
-        flex: 1 1 calc(33.333% - 2rem);
-        margin: 1rem;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Background Images for Each Page */
+/* Background images for different pages */
 body.index {
     background-image: url('../images/bg-index.jpg');
+}
+
+body.food {
+    background-image: url('../images/bg-food.jpg');
 }
 
 body.funafuti {
@@ -149,6 +27,109 @@ body.nukulaelae {
     background-image: url('../images/bg-nukulaelae.jpg');
 }
 
-body.food {
-    background-image: url('../images/bg-food.jpg');
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(68, 68, 68, 0.8);
+    padding: 0.5em 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Section Styling */
+section {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 1em;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #006699;
+}
+
+section p {
+    text-align: justify;
+}
+
+section figure {
+    margin: 1em;
+    display: inline-block;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figure figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    margin-top: 2em;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Large Devices (Desktops) */
+@media (min-width: 1024px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+}
+
+/* Small Devices (Mobiles) */
+@media (max-width: 767px) {
+    section {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5em 0;
+    }
 }
